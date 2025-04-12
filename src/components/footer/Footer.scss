@@ -1,0 +1,134 @@
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .container {
+    padding: 50px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+footer .container .logo {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer .container .logo .send {
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+footer .container .logo .send img {
+    cursor: pointer;
+}
+
+footer .container .logo .send input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 4px 5px 4px 5px;
+    color: white;
+}
+
+footer .container ul {
+    width: 180px;
+    display: flex;
+    align-content: start;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer .container ul span {
+    font-size: 23px;
+}
+
+footer .container ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .down {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+footer .container .down .scan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+footer .container .down .scan .scan-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+footer .container .down .icons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 23px;
+    cursor: pointer;
+}
+
+footer .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(128, 128, 128, 0.517);
+    padding: 15px 0px !important;
+    border-top: 1px solid rgba(128, 128, 128, 0.251);
+}
+
+
+.down {
+    h2 {
+        font-size: 19px;
+    }
+
+    p {
+        color: gray;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+
+.logo{
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-weight: normal;
+    }
+    p{
+        font-weight: 200;
+        font-size: 15px;
+    }
+}
+
+ul {
+    span{
+        font-size: 20px !important;
+    }
+    a {
+        font-size: 14px;
+    }
+}

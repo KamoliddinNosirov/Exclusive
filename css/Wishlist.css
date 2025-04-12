@@ -1,0 +1,356 @@
+.wishlist {
+  width: 100%;
+}
+
+.wishlist .container {
+  padding: 0px 0px 80px 0px;
+}
+
+.wishlist .container .cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wishlist .container .cart h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.wishlist .container .cart .btn-wishlist {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  color: black;
+  margin: 0px;
+}
+
+.wishlist .container .cart .btn-wishlist:hover {
+  box-shadow: 0px 0px 10px 3px gray;
+  transform: scale(1.1);
+  border-color: transparent;
+  background-color: black;
+  color: white;
+}
+
+.wishlist .container .block {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  gap: 65px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.h1tag {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.block .bosk {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+.block .bosk:hover {
+  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.053);
+  transform: scale(1.01);
+}
+.block .bosk:hover .btn-to-cart {
+  bottom: 0px !important;
+  box-shadow: none;
+}
+.block .bosk .bosk-img {
+  width: 100%;
+  height: 220px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.block .bosk .bosk-img img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block .bosk .bosk-img .btn-to-cart {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0px;
+  border: none;
+  transition: all 0.5s ease;
+}
+.block .bosk .bosk-img .discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #DB4444;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.block .bosk .bosk-img .heart {
+  position: absolute;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.block .bosk .bosk-img .eye {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+.block .bosk h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.block .bosk .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 0px;
+}
+.block .bosk .price p {
+  font-size: 14px;
+  color: #DB4444;
+}
+.block .bosk .price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.794);
+}
+.block .bosk .price .span.active {
+  display: none;
+}
+.block .bosk .stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.block .bosk .stars img {
+  width: 14px;
+}
+.block .bosk .stars p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.794);
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #DB4444;
+  border-radius: 5px;
+  border: none;
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+button:hover {
+  box-shadow: 0px 0px 10px 3px #DB4444;
+  cursor: pointer;
+}
+
+.jastForYou {
+  width: 100%;
+}
+
+.jastForYou .container {
+  padding: 0px 0px 80px 0px;
+}
+
+.jastForYou .container .cart {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jastForYou .container .cart h4 {
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.jastForYou .container .cart .btn-wishlist {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  color: black;
+  margin: 0px;
+}
+
+.jastForYou .container .cart .btn-wishlist:hover {
+  box-shadow: 0px 0px 10px 3px gray;
+  transform: scale(1.1);
+  border-color: transparent;
+  background-color: black;
+  color: white;
+}
+
+.jastForYou .container .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.jastForYou .container .block .bosk {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.jastForYou .container .block .bosk:hover {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.169);
+}
+.jastForYou .container .block .bosk:hover .btn {
+  bottom: 0px;
+}
+.jastForYou .container .block .bosk .bosk-img {
+  padding: 10px;
+  width: 100%;
+  height: 180px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.jastForYou .container .block .bosk .bosk-img button {
+  position: absolute;
+  bottom: -100px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 8px 0px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+}
+.jastForYou .container .block .bosk .bosk-img .discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #DB4444;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.jastForYou .container .block .bosk .bosk-img .heart {
+  position: absolute;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.jastForYou .container .block .bosk .bosk-img .eye {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+.jastForYou .container .block .bosk h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.jastForYou .container .block .bosk .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 0px;
+}
+.jastForYou .container .block .bosk .price p {
+  font-size: 14px;
+  color: #DB4444;
+}
+.jastForYou .container .block .bosk .price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.794);
+}
+.jastForYou .container .block .bosk .price .span.active {
+  display: none;
+}
+.jastForYou .container .block .bosk .stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.jastForYou .container .block .bosk .stars img {
+  width: 14px;
+}
+.jastForYou .container .block .bosk .stars p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.794);
+}/*# sourceMappingURL=Wishlist.css.map */

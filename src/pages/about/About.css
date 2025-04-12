@@ -1,0 +1,177 @@
+.hero2 {
+  width: 100%;
+  position: relative;
+  padding-bottom: 200px;
+}
+.hero2 .bacround {
+  width: 707px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+.hero2 .bacround img {
+  width: 100%;
+}
+.hero2 .container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.hero2 .container .hero-title {
+  font-size: 14px;
+  color: gray;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.hero2 .container .hero-title span {
+  color: black;
+}
+.hero2 .container .info {
+  width: 500px;
+  margin-top: 50px;
+}
+.hero2 .container .info h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+.hero2 .container .info p {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.bolim-section {
+  width: 100%;
+  margin: 80px 0px;
+}
+.bolim-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.bolim-section .container .card {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  row-gap: 2px;
+  transition: all 0.3s ease;
+}
+.bolim-section .container .card:hover {
+  background-color: #DB4444;
+  color: white;
+  cursor: pointer;
+  border-color: #DB4444;
+}
+.bolim-section .container .card img {
+  width: 70px;
+}
+.bolim-section .container .card h1 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.bolim-section .container .card p {
+  font-size: 14px;
+}
+
+.user-info {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.user-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.user-info .container .box {
+  width: 360px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.user-info .container .box img {
+  width: 100%;
+}
+.user-info .container .box h2 {
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.user-info .container .box p {
+  margin: 8px 0px;
+}
+.user-info .container .box .icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.user-info .container .box .icons span {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.user-info .container .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+}
+.user-info .container .dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(128, 128, 128, 0.585);
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.user-info .container .dots .dot:hover {
+  border: 2px solid #DB4444;
+  cursor: pointer;
+  background-color: #DB4444;
+}
+
+.cardds {
+  width: 100%;
+  margin: 140px 0px !important;
+}
+.cardds .container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.cardds .container .cards .card {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.cardds .container .cards .card img {
+  width: 70px;
+}
+.cardds .container .cards .card h4 {
+  margin-top: 10px;
+}
+.cardds .container .cards .card p {
+  font-size: 13px;
+}/*# sourceMappingURL=About.css.map */

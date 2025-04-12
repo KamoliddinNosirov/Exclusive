@@ -1,0 +1,1011 @@
+.hero {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.hero .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.hero .container ul {
+  padding-top: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.6666666667);
+  padding-right: 20px;
+  padding-bottom: 8px;
+}
+.hero .container ul li {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+  cursor: pointer;
+}
+.hero .container ul li a {
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+.hero .container .bolim {
+  margin-top: 25px;
+  width: 950px;
+  height: 310px;
+  overflow: hidden;
+  background-color: #000000;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+.hero .container .bolim .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+}
+.hero .container .bolim .dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.7333333333);
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.hero .container .bolim .dots .dot:hover {
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: #DB4444;
+}
+.hero .container .bolim .img-hero {
+  width: 500px;
+  height: 300px;
+}
+.hero .container .bolim .img-hero img {
+  width: 100%;
+}
+.hero .container .bolim .info {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 15px;
+  margin: 30px 0px 30px 80px;
+  width: 300px;
+}
+.hero .container .bolim .info .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hero .container .bolim .info .phone p {
+  font-weight: 200;
+}
+.hero .container .bolim .info h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.hero .container .bolim .info button {
+  border: none;
+  background-color: transparent;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px;
+  cursor: pointer;
+  margin: 0px;
+}
+.hero .container .bolim .info button a {
+  color: white;
+  padding: 4px 0px;
+  border-bottom: 1px solid white;
+}
+.hero .container .bolim .info button span {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.flash {
+  width: 100%;
+  padding: 80px 0px;
+}
+.flash .container {
+  width: 100%;
+}
+.flash .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #DB4444;
+  margin-bottom: 30px;
+}
+.flash .container .bolim {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.flash .container .bolim h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.flash .container .bolim .boxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 60px;
+}
+.flash .container .bolim .boxs .dotet {
+  font-size: 25px;
+  color: #DB4444;
+}
+.flash .container .bolim .boxs .box {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flash .container .bolim .boxs .box span {
+  font-size: 10px;
+}
+.flash .container .bolim .boxs .box p {
+  font-size: 23px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+.flash .container .bolim .swipe {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.flash .container .bolim .swipe span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.flash .container .bolim .swipe span:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.296);
+}
+.flash .container .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.flash .container .block .bosk {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+.flash .container .block .bosk:hover {
+  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.053);
+  transform: scale(1.01);
+}
+.flash .container .block .bosk:hover .btn-to-cart {
+  bottom: 0px !important;
+  box-shadow: none;
+}
+.flash .container .block .bosk .bosk-img {
+  width: 100%;
+  height: 220px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.flash .container .block .bosk .bosk-img img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flash .container .block .bosk .bosk-img .btn-to-cart {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0px;
+  border: none;
+  transition: all 0.5s ease;
+}
+.flash .container .block .bosk .bosk-img .discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #DB4444;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.flash .container .block .bosk .bosk-img .heart {
+  position: absolute;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.flash .container .block .bosk .bosk-img .eye {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+.flash .container .block .bosk h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.flash .container .block .bosk .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 0px;
+}
+.flash .container .block .bosk .price p {
+  font-size: 14px;
+  color: #DB4444;
+}
+.flash .container .block .bosk .price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.794);
+}
+.flash .container .block .bosk .price .span.active {
+  display: none;
+}
+.flash .container .block .bosk .stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.flash .container .block .bosk .stars img {
+  width: 14px;
+}
+.flash .container .block .bosk .stars p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.794);
+}
+.flash .container button {
+  padding: 12px 30px;
+  background-color: #DB4444;
+  border-radius: 5px;
+  border: none;
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.flash .container button:hover {
+  box-shadow: 0px 0px 10px 3px #DB4444;
+  cursor: pointer;
+}
+
+.browse {
+  width: 100%;
+}
+.browse .container {
+  width: 100%;
+}
+.browse .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #DB4444;
+  margin-bottom: 30px;
+}
+.browse .container .bolim {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.browse .container .bolim h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.browse .container .bolim .swipe {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.browse .container .bolim .swipe span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.browse .container .bolim .swipe span:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.296);
+}
+.browse .container .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.462);
+  padding-bottom: 50px;
+}
+.browse .container .block .box {
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.browse .container .block .box span {
+  font-size: 55px;
+  display: flex;
+}
+.browse .container .block .box:hover {
+  background-color: #DB4444;
+  color: white;
+  cursor: pointer;
+  border-color: #DB4444;
+}
+
+.best {
+  width: 100%;
+  margin: 50px 0px;
+}
+.best .container {
+  width: 100%;
+}
+.best .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #DB4444;
+  margin-bottom: 30px;
+}
+.best .container .bolim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.best .container .bolim h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.best .container .bolim .btn {
+  padding: 12px 30px;
+  background-color: #DB4444;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  margin: 0px;
+}
+.best .container .bolim .btn:hover {
+  box-shadow: 0px 0px 10px 3px #DB4444;
+  cursor: pointer;
+}
+.best .container .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.best .container .block .bosk {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.best .container .block .bosk:hover {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.169);
+}
+.best .container .block .bosk:hover .btn {
+  bottom: 0px;
+}
+.best .container .block .bosk .bosk-img {
+  padding: 10px;
+  width: 100%;
+  height: 180px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.best .container .block .bosk .bosk-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  margin-top: -30px;
+}
+.best .container .block .bosk .bosk-img button {
+  position: absolute;
+  bottom: -100px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 8px 0px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+}
+.best .container .block .bosk .bosk-img .discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #DB4444;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.best .container .block .bosk .bosk-img .heart {
+  position: absolute;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.best .container .block .bosk .bosk-img .eye {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+.best .container .block .bosk h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.best .container .block .bosk .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 0px;
+}
+.best .container .block .bosk .price p {
+  font-size: 14px;
+  color: #DB4444;
+}
+.best .container .block .bosk .price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.794);
+}
+.best .container .block .bosk .price .span.active {
+  display: none;
+}
+.best .container .block .bosk .stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.best .container .block .bosk .stars img {
+  width: 14px;
+}
+.best .container .block .bosk .stars p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.794);
+}
+
+.categori {
+  width: 100%;
+  margin: 50px 0px;
+}
+.categori .container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+.categori .container .info {
+  width: 450px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.categori .container .info p {
+  color: #00FF66;
+  margin-top: 20px;
+}
+.categori .container .info h1 {
+  margin-top: 30px;
+  line-height: 50px;
+  font-size: 45px;
+  font-weight: 500;
+}
+.categori .container .info .boxs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  margin: 20px 0px;
+}
+.categori .container .info .boxs .box {
+  width: 45px;
+  height: 45px;
+  background-color: #F5F5F5;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+.categori .container .info .boxs .box p {
+  font-size: 12px;
+  margin: 0px !important;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  padding: 0px;
+}
+.categori .container .info .boxs .box span {
+  font-size: 8px;
+  display: flex;
+  margin: -5px 0px 0px 0px;
+  padding: 0px;
+}
+.categori .container .info button {
+  margin-top: 15px;
+  padding: 10px 22px;
+  color: white;
+  background-color: #00FF66;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.categori .container .info button:hover {
+  box-shadow: 0px 0px 10px 3px #00FF66;
+  cursor: pointer;
+}
+.categori .container .img-box {
+  width: 600px;
+  height: 450px;
+  background-image: url(/public/imgs/hover.png);
+  background-position: center;
+  background-size: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categori .container .img-box img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.ourProduct {
+  width: 100%;
+  padding: 80px 0px;
+}
+.ourProduct .container {
+  width: 100%;
+}
+.ourProduct .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #DB4444;
+  margin-bottom: 30px;
+}
+.ourProduct .container .bolim {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.ourProduct .container .bolim h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.ourProduct .container .bolim .swipe {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.ourProduct .container .bolim .swipe span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.ourProduct .container .bolim .swipe span:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.296);
+}
+.ourProduct .container .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  row-gap: 30px;
+}
+.ourProduct .container .block .bosk {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.ourProduct .container .block .bosk:hover {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.169);
+}
+.ourProduct .container .block .bosk:hover .btn {
+  bottom: 0px;
+  box-shadow: none;
+}
+.ourProduct .container .block .bosk .bosk-img {
+  padding: 10px;
+  width: 100%;
+  height: 180px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ourProduct .container .block .bosk .bosk-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  margin-top: -30px;
+}
+.ourProduct .container .block .bosk .bosk-img button {
+  position: absolute;
+  bottom: -100px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 8px 0px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+}
+.ourProduct .container .block .bosk .bosk-img .discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #DB4444;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.ourProduct .container .block .bosk .bosk-img .new {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: #00FF66;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.ourProduct .container .block .bosk .bosk-img .heart {
+  position: absolute;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.ourProduct .container .block .bosk .bosk-img .eye {
+  position: absolute;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+.ourProduct .container .block .bosk h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.ourProduct .container .block .bosk .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 0px;
+}
+.ourProduct .container .block .bosk .price p {
+  font-size: 14px;
+  color: #DB4444;
+}
+.ourProduct .container .block .bosk .price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.794);
+}
+.ourProduct .container .block .bosk .price .span.active {
+  display: none;
+}
+.ourProduct .container .block .bosk .price .stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.ourProduct .container .block .bosk .price .stars img {
+  width: 14px;
+}
+.ourProduct .container .block .bosk .price .stars p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.794);
+}
+.ourProduct .container .block .bosk .colors {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+.ourProduct .container .block .bosk .colors .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.ourProduct .container .block .bosk .colors .color:hover {
+  border-color: black;
+  cursor: pointer;
+}
+.ourProduct .container button {
+  padding: 12px 30px;
+  background-color: #DB4444;
+  border-radius: 5px;
+  border: none;
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.ourProduct .container button:hover {
+  box-shadow: 0px 0px 10px 3px #DB4444;
+  cursor: pointer;
+}
+
+.new.active {
+  display: none;
+}
+
+.newArrival {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.newArrival .container {
+  width: 100%;
+}
+.newArrival .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #DB4444;
+  margin-bottom: 30px;
+}
+.newArrival .container h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.newArrival .container .block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.newArrival .container .block .bosk {
+  width: 540px;
+  height: 550px;
+  background-color: black;
+  background-image: url(/public/imgs/plastation2.png);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: bottom;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  row-gap: 5px;
+  padding: 40px 30px;
+  flex-direction: column;
+}
+.newArrival .container .block .bosk h2 {
+  font-weight: 500;
+}
+.newArrival .container .block .bosk p {
+  font-size: 15px;
+  width: 60%;
+}
+.newArrival .container .block .bosk a {
+  color: white;
+  font-size: 15px;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.newArrival .container .block .bolims {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newArrival .container .block .bolims .bolim {
+  width: 620px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.942);
+  background-image: url(/public/imgs/userimg.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  row-gap: 5px;
+  padding: 30px 20px;
+  flex-direction: column;
+}
+.newArrival .container .block .bolims .bolim h2 {
+  font-weight: 500;
+}
+.newArrival .container .block .bolims .bolim p {
+  width: 45%;
+  font-size: 15px;
+}
+.newArrival .container .block .bolims .bolim a {
+  color: white;
+  font-size: 15px;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.newArrival .container .block .bolims .carts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.newArrival .container .block .bolims .carts .cart {
+  width: 290px;
+  background-color: rgba(0, 0, 0, 0.942);
+  height: 230px;
+  background-image: url(/public/imgs/spekar.png);
+  background-size: 66%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  row-gap: 5px;
+  padding: 30px 20px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.newArrival .container .block .bolims .carts .cart h2 {
+  font-weight: 500;
+}
+.newArrival .container .block .bolims .carts .cart p {
+  font-size: 14px;
+}
+.newArrival .container .block .bolims .carts .cart a {
+  color: white;
+  font-size: 15px;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.newArrival .container .block .bolims .carts .cart2 {
+  background-color: rgba(0, 0, 0, 0.942);
+  background-image: url(/public/imgs/gucci.png);
+}
+.newArrival .container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.newArrival .container .cards .card {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.newArrival .container .cards .card img {
+  width: 70px;
+}
+.newArrival .container .cards .card h4 {
+  margin-top: 10px;
+}
+.newArrival .container .cards .card p {
+  font-size: 13px;
+}
+
+.discount_no {
+  display: none !important;
+}/*# sourceMappingURL=Home.css.map */

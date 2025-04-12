@@ -1,0 +1,277 @@
+.OneProduct{
+    width: 100%;
+}
+
+.OneProduct .container{
+    padding: 60px 0px;
+}
+
+.OneProduct .container .from{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.OneProduct .container .from span{
+    font-size: 14px;
+    color: gray;
+}
+
+.OneProduct .container .block{
+    width: 100%;
+    display: flex !important;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.OneProduct .container .block .part-imgs{
+    width: 720px;
+    display: flex;
+}
+
+
+.OneProduct .container .block .part-imgs .main-img{
+    width: 550px;
+    height: 485px;
+    /* padding: 10px; */
+    
+}
+
+.OneProduct .container .block .part-imgs .main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OneProduct .container .block .part-imgs .imgs{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 25%;
+}
+
+.OneProduct .container .block .part-imgs .imgs img{
+    padding: 10px;
+    width: 120px;
+    height: 110px;
+    cursor: pointer;
+    object-fit: contain;
+    box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+}
+
+
+.OneProduct .container .block .info{
+    width: 450px;
+}
+
+.OneProduct .container .block .info h2{
+    font-weight: 500;
+}
+
+.OneProduct .container .block .info  .price{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 16px;
+    padding: 8px 0px;
+}
+
+.OneProduct .container .block .info  .price .price-title{
+    color: black;
+    font-size: 22px;
+}
+
+.OneProduct .container .block .info  .price p{
+    color: red;
+    font-size: 20px;
+}
+
+.OneProduct .container .block .info  .price .dsc{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 15px;
+    font-size: 16px;
+}
+
+.OneProduct .container .block .info  .price .dsc.active{
+    display: none;
+}
+
+
+.OneProduct .container .block .info .product-dsc{
+    width: 100%;
+    padding: 0px 45px 10px 0px;
+    font-size: 14px;
+}
+
+.OneProduct .container .block .info .underline{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 15px 10px 15px 0px;
+} 
+
+.OneProduct .container .block .info .colors{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.OneProduct .container .block .info .colors .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 1px solid gray;
+}
+
+
+.OneProduct .container .block .info .colors .dot.active{
+    box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.84);
+}
+
+.OneProduct .container .block .info .sizes{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 15px 0px;
+}
+
+.OneProduct .container .block .info .sizes .size-box{
+    border: 1px solid gray;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.OneProduct .container .block .info .sizes .size-box p{
+    font-size: 13px;
+}
+
+.OneProduct .container .block .info .sizes .size-box.active{
+    background-color: #DB4444;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #db444497;
+    border-color: #DB4444;
+    transform: scale(1.05);
+}
+
+.OneProduct .container .block .info .part{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start !important;
+    gap: 20px;
+}
+
+.OneProduct .container .block .info .part .count{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+}
+
+.OneProduct .container .block .info .part .count p{
+    width: 30px;
+    text-align: center;
+}
+
+.OneProduct .container .block .info .part .count span{
+    cursor: pointer;
+}
+
+.OneProduct .container .block .info .part .count .minus{
+    border-right: 1px solid gray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.OneProduct .container .block .info .part .count .plus{
+    border-left: 1px solid gray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+
+.OneProduct .container .block .info .part button{
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: 1px solid #DB4444;
+    cursor: pointer;
+    color: white;
+    margin: 0px !important;
+    background-color: #DB4444;
+}
+
+.OneProduct .container .block .info .part .like{
+    border: 1px solid rgba(128, 128, 128, 0.289);
+    padding: 7px 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.OneProduct .container .block .info .bolim{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 88%;
+    margin-top: 30px;
+}
+
+.OneProduct .container .block .info .bolim .drive{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.OneProduct .container .block .info .bolim .drive .drive-info p{
+    font-size: 13px;
+}
+
+.OneProduct .container .block .info .bolim .drive-info2{
+    border-bottom: 1px solid gray;
+}
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading.active{
+    display: flex;
+}
