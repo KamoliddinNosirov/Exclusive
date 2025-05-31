@@ -10,6 +10,7 @@ import { GiConsoleController } from "react-icons/gi";
 import Product2 from '../../components/product2/Product2';
 import Productt from '../../components/productt/Productt';
 import { useEffect, useState } from "react";
+import Swiper_hero from "../../components/swiper/Swiper_hero";
 
 function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, likIsCount }) {
 
@@ -29,7 +30,7 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
     minutes * 60 * 1000 +
     seconds * 1090
   )
-  
+
   // Bu sanoq 0 ga yetganda to'xtatish uchun
   useEffect(() => {
     const timer = setInterval(() => {
@@ -57,8 +58,6 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
     }
   }, [remainingTime])
 
-  console.log(product);
-
 
   return (
 
@@ -78,29 +77,7 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
             <li><a href="">HeadPhones</a> <span><FaAngleRight /></span></li>
             <li><a href="">Gaming</a> <span><FaAngleRight /></span></li>
           </ul>
-          <div className="bolim">
-            <div className="info">
-              <div className="phone">
-                <img src="/public/imgs/Appl.svg" alt="" />
-                <p>iPhone 14 Series</p>
-              </div>
-              <h1>Up to 10% off Voucher</h1>
-              <button>
-                <a href="">Shop Now</a>
-                <span><FaArrowRight /></span>
-              </button>
-            </div>
-            <div className="img-hero">
-              <img src="/public/imgs/phone.png" alt="" />
-            </div>
-            <div className="dots">
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-            </div>
-          </div>
+          <Swiper_hero />
         </div>
       </div>
       <main>
@@ -136,17 +113,17 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
               </div>
             </div>
             <div className="block">
-            { 
-              productfilter ? 
-                product?.map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                }) : 
-                product?.slice(0, 8).map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                })
+              {
+                productfilter ?
+                  product?.map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  }) :
+                  product?.slice(0, 8).map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  })
               }
             </div>
-            <button onClick={()=>{
+            <button onClick={() => {
               setProductfilter(!productfilter)
             }}>View All Products</button>
           </div>
@@ -194,19 +171,19 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
             <p className='title'><img src="/public/imgs/sectionimg.png" alt="" />This Month</p>
             <div className="bolim">
               <h1>Best Selling Products</h1>
-              <button onClick={()=>{
+              <button onClick={() => {
                 setbestProduct(!bestProduct)
               }} className='btn'>View All</button>
             </div>
             <div className="block">
-            { 
-              bestProduct ? 
-                product?.map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                }) : 
-                product?.slice(0, 4).map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                })
+              {
+                bestProduct ?
+                  product?.map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  }) :
+                  product?.slice(0, 4).map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  })
               }
             </div>
           </div>
@@ -252,17 +229,17 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
               </div>
             </div>
             <div className="block">
-              { 
-              ourProduct ? 
-                product?.map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                }) : 
-                product?.slice(0, 8).map((item, keyid) => {
-                  return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                })
+              {
+                ourProduct ?
+                  product?.map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  }) :
+                  product?.slice(0, 8).map((item, keyid) => {
+                    return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
+                  })
               }
             </div>
-            <button onClick={()=>{
+            <button onClick={() => {
               setOurProduct(!ourProduct)
             }}>View All Products</button>
           </div>

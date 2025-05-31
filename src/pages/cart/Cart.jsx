@@ -6,25 +6,6 @@ import Cartbox from '../../components/cartcompnents/Cartbox';
 
 function Cart({cartDate, deleteToCart, getSelectedInfo, inCarts, setopenModaltoCart}) {
 
-  // const deleteCart = (id) => {
-  //   console.log(id);
-  //   const myHeaders = new Headers();
-  //   myHeaders.append("Authorization", `Bearer ${getToken()}`);
-
-  //   const requestOptions = {
-  //     method: "DELETE",
-  //     headers: myHeaders,
-  //     redirect: "follow"
-  //   };
-
-  //   fetch(`https://ecommercev01.pythonanywhere.com/order/remove-from-cart?cart_item_id=${id}`, requestOptions)
-  //     .then((response) => response.text())
-  //     .then((result) => {
-  //       console.log(result)
-  //     })
-  //     .catch((error) => console.error(error));
-  // }
-
 
   return (
     <div onLoad={() => {

@@ -3,6 +3,7 @@ import "./SingUp.scss"
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
+import { setToken } from '../../services/services';
 
 
 function SingUp({ getUser, likIsCount }) {
@@ -67,12 +68,14 @@ function SingUp({ getUser, likIsCount }) {
       .then((result) => {
         if(result?.access){
           toast.success("Foydalanuvchi muvaffaqiyatli ro'yxatdan o'tkazildi.")
+          setToken(result.access)
           navigate("/")
           likIsCount()
           setemailORphone("")
           setPassword("")
           setFirstName("")
           likIsCount()
+          getUser()
         }
       })
       .catch((error) => console.error(error));

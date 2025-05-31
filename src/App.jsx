@@ -35,345 +35,6 @@ function App() {
 
   const [product, setproduct] = useState(null)
   const [selectedProduct, setSelectedProduct] = useState(null)
-
-  const [product2, setproduct2] = useState([
-    {
-      img: "/public/imgs/img1.png",
-      title: "The north coat",
-      discount_price: 260,
-      price: 360,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 65,
-        },
-      ],
-      discount: 0,
-    },
-    {
-      img: "/public/imgs/img2.png",
-      title: "Gucci duffle bag",
-      discount_price: 960,
-      price: 1160,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 65,
-        },
-      ],
-      discount: 0,
-    },
-    {
-      img: "/public/imgs/img3.png",
-      title: "RGB liquid CPU Cooler",
-      discount_price: 160,
-      price: 170,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 65,
-        },
-      ],
-      discount: 0,
-    },
-    {
-      img: "/public/imgs/img4.png",
-      title: "Small BookSelf",
-      discount_price: 0,
-      price: 360,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 65,
-        },
-      ],
-      discount: 0,
-    }
-  ])
-  const [product3, setproduct3] = useState([
-    {
-      img: "/public/imgs/imgg1.png",
-      title: "Breed Dry Dog Food",
-      price: 100,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 35,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: [],
-    },
-    {
-      img: "/public/imgs/imgg2.png",
-      title: "CANON EOS DSLR Camera",
-      price: 360,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 95,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: [],
-    },
-    {
-      img: "/public/imgs/imgg3.png",
-      title: "ASUS FHD Gaming Laptop",
-      price: 700,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 325,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: [],
-    },
-    {
-      img: "/public/imgs/imgg4.png",
-      title: "Curology Product Set ",
-      price: 500,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 145,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: [],
-    },
-    {
-      img: "/public/imgs/imgg5.png",
-      title: "Kids Electric Car",
-      price: 960,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 65,
-        },
-      ],
-      discount: 0,
-      new: true,
-      colors: ["red", "cadetblue"]
-    },
-    {
-      img: "/public/imgs/imgg6.png",
-      title: "Jr. Zoom Soccer Cleats",
-      price: 1160,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 35,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: ["yellow", "red"]
-    },
-    {
-      img: "/public/imgs/imgg7.png",
-      title: "GP11 Shooter USB Gamepad",
-      price: 660,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: false,
-        },
-        {
-          ball: 55,
-        },
-      ],
-      discount: 0,
-      new: true,
-      colors: ["red", "black"]
-    },
-    {
-      img: "/public/imgs/imgg8.png",
-      title: "Quilted Satin Jacket",
-      price: 660,
-      stars: [
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          star: true,
-        },
-        {
-          ball: 55,
-        },
-      ],
-      discount: 0,
-      new: false,
-      colors: ["red", "green"]
-    }
-  ])
-
-  console.log(product);
   
 
   const getUser = () => {
@@ -394,7 +55,6 @@ function App() {
       })
       .catch((error) => console.error(error));
   }
-
 
   const getDate = () => {
     const myHeaders = new Headers();
@@ -432,6 +92,8 @@ function App() {
     fetch(`https://ecommercev01.pythonanywhere.com/product/detail/?product_id=${id}`, requestOptions)
       .then((response) => response.json())
       .then((result) => {
+        console.log(result);
+        console.log(result);
         setSelectedProduct(result)
         setopenModaltoCart(true)
       })
@@ -510,7 +172,7 @@ function App() {
     };
 
     fetch(`https://ecommercev01.pythonanywhere.com/order/remove-from-cart?cart_item_id=${id}`, requestOptions)
-      .then((response) => response.json())
+      .then((response) => response.text())
       .then((result) => {
         console.log(result)
       })
@@ -541,7 +203,6 @@ function App() {
 
   useEffect(() => {
     getDate()
-    getSelectedInfo()
     cartDate()
     likIsCount()
   }, [])
@@ -557,10 +218,10 @@ function App() {
         {
           <Modal addtoCart={addtoCart} selectedProduct={selectedProduct} selectedSize={selectedSize} selectedColor={selectedColor} openModaltoCart={openModaltoCart} count={count} setCount={setCount} setopenModaltoCart={setopenModaltoCart} SetSelectedSize={SetSelectedSize} SetSelectedColor={SetSelectedColor} />
         }
-        <ToastContainer pauseOnFocusLoss closeOnClick={true} />
+        <ToastContainer pauseOnFocusLoss closeOnClick={true} position="top-center"/>
         <Navbar likIsCount={likIsCount} cartDate={cartDate} likecount={likecount} user={user} user_info={user_info} getUser={getUser} addCart={addCart} openModaltoCart={openModaltoCart} setopenModaltoCart={setopenModaltoCart} inCarts={inCarts} product={product} />
         <Routes>
-          <Route path='/' element={<Home likIsCount={likIsCount} getSelectedInfo={getSelectedInfo} product={product} product2={product2} addCart={addCart} setAddCart={setAddCart} product3={product3} setopenModaltoCart={setopenModaltoCart} getDate={getDate} />} />
+          <Route path='/' element={<Home likIsCount={likIsCount} getSelectedInfo={getSelectedInfo} product={product} addCart={addCart} setAddCart={setAddCart} setopenModaltoCart={setopenModaltoCart} getDate={getDate} />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
           <Route path='/singup' element={<SingUp getUser={getUser} likIsCount={likIsCount} />} />
@@ -568,7 +229,7 @@ function App() {
           <Route path='/cart' element={<Cart cartDate={cartDate} deleteToCart={deleteToCart} getSelectedInfo={getSelectedInfo} setopenModaltoCart={setopenModaltoCart} inCarts={inCarts} />} />
           <Route path='/cartbox' element={<Cartbox />} />
           <Route path='/OneProduct/:id' element={<OneProduct />} />
-          <Route path='/wishlist' element={<Wishlist likecount={likecount} product2={product2} />} />
+          <Route path='/wishlist' element={<Wishlist likecount={likecount} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
