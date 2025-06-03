@@ -115,12 +115,12 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
             <div className="block">
               {
                 productfilter ?
-                  product?.map((item, keyid) => {
+                  product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) :
-                  product?.slice(0, 8).map((item, keyid) => {
+                  }) : <div className="bosk noactive"></div> :
+                  product ? product?.slice(0, 8).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  })
+                  }) : <div className="bosk noactive"></div>
               }
             </div>
             <button onClick={() => {
@@ -178,12 +178,12 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
             <div className="block">
               {
                 bestProduct ?
-                  product?.map((item, keyid) => {
+                  product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) :
-                  product?.slice(0, 4).map((item, keyid) => {
+                  }) : <div className="bosk noactive"></div> :
+                  product ? product?.slice(8, 12).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  })
+                  }) : <div className="bosk noactive"></div>
               }
             </div>
           </div>
@@ -231,12 +231,12 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
             <div className="block">
               {
                 ourProduct ?
-                  product?.map((item, keyid) => {
+                  product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) :
-                  product?.slice(0, 8).map((item, keyid) => {
+                  }) : <div className="bosk noactive"></div> :
+                  product ? product?.slice(12,20).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  })
+                  }) : <div className="bosk noactive"></div>
               }
             </div>
             <button onClick={() => {

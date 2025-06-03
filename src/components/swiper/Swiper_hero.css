@@ -1,0 +1,22 @@
+.mySwiper {
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: end !important;
+  margin-right: 0;
+}
+.mySwiper .swiper-slider {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.mySwiper .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: white;
+  opacity: 0.6 !important;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1 !important;
+}/*# sourceMappingURL=Swiper_hero.css.map */
