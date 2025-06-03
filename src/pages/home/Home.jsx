@@ -117,10 +117,14 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
                 productfilter ?
                   product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div> :
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  })  :
                   product ? product?.slice(0, 8).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div>
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  }) 
               }
             </div>
             <button onClick={() => {
@@ -180,10 +184,14 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
                 bestProduct ?
                   product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div> :
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  })  :
                   product ? product?.slice(8, 12).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div>
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  }) 
               }
             </div>
           </div>
@@ -233,10 +241,14 @@ function Home({ getSelectedInfo, product, product2, product3, getDate, isLike, l
                 ourProduct ?
                   product ? product?.map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div> :
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  })  :
                   product ? product?.slice(12,20).map((item, keyid) => {
                     return <Product likIsCount={likIsCount} isLike={isLike} getDate={getDate} getSelectedInfo={getSelectedInfo} key={keyid} item={item} />
-                  }) : <div className="bosk noactive"></div>
+                  }) : [1,1,1,1,1,1,1,1].map(()=>{
+                    return <div className="bosk noactive"></div>
+                  }) 
               }
             </div>
             <button onClick={() => {
