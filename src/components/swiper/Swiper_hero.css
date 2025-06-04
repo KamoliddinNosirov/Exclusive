@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: end !important;
   margin-right: 0;
-}
-.mySwiper .swiper-slider {
+  height: 330px;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 20px;
@@ -19,4 +18,23 @@
 .mySwiper .swiper-pagination-bullet-active {
   background-color: white !important;
   opacity: 1 !important;
+}
+
+.mySwiper.noactive {
+  opacity: 0.8;
+  background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+  animation: cardanimation 2s infinite linear;
+  background-size: 800px 50px;
+}
+.mySwiper.noactive .swiper-slider {
+  display: none;
+}
+
+@keyframes cardanimation {
+  from {
+    background-position: -800px 0px;
+  }
+  to {
+    background-position: 800px 0px;
+  }
 }/*# sourceMappingURL=Swiper_hero.css.map */

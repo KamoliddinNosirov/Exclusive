@@ -108,8 +108,22 @@
   align-items: center;
   justify-content: start;
   gap: 10px;
-  color: #DB4444;
   margin-bottom: 30px;
+}
+.flash .container .title span {
+  color: #DB4444;
+}
+.flash .container .title.noactive {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  opacity: 0.8;
+  background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+  animation: cardanimation 2s infinite linear;
+  background-size: 800px 50px;
+}
+.flash .container .title.noactive img, .flash .container .title.noactive span {
+  display: none;
 }
 .flash .container .bolim {
   display: flex;
@@ -312,7 +326,7 @@
 }
 .flash .container .block .bosk.noactive {
   opacity: 0.8;
-  background: linear-gradient(to right, rgba(158, 215, 255, 0.4274509804), #ffffff, rgba(158, 215, 255, 0.4431372549));
+  background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
   animation: cardanimation 2s infinite linear;
   background-size: 800px 50px;
   height: 330px;
@@ -596,7 +610,7 @@
 }
 .best .container .block .bosk.noactive {
   opacity: 0.8;
-  background: linear-gradient(to right, rgba(158, 215, 255, 0.4274509804), #ffffff, rgba(158, 215, 255, 0.4431372549));
+  background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
   animation: cardanimation 2s infinite linear;
   background-size: 800px 50px;
   height: 330px;
@@ -882,7 +896,7 @@
 }
 .ourProduct .container .block .bosk.noactive {
   opacity: 0.8;
-  background: linear-gradient(to right, rgba(158, 215, 255, 0.4274509804), #ffffff, rgba(158, 215, 255, 0.4431372549));
+  background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
   animation: cardanimation 2s infinite linear;
   background-size: 800px 50px;
   height: 330px;

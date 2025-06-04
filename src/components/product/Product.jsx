@@ -79,7 +79,6 @@ function Product({ likIsCount, getSelectedInfo, item, getDate }) {
                         </div>
                         <div className="stars">
                             <Stars star={item.stars} />
-                            {/* <p>({item?.ball})</p> */}
                         </div>
 
                     </div>

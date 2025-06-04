@@ -92,8 +92,6 @@ function App() {
     fetch(`https://ecommercev01.pythonanywhere.com/product/detail/?product_id=${id}`, requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
-        console.log(result);
         setSelectedProduct(result)
         setopenModaltoCart(true)
       })
@@ -127,8 +125,8 @@ function App() {
       "product_id": id,
       "quantity": count,
       "properties": {
-        "color": selectedColor,
-        "size": selectedSize
+        "color": selectedColor ? selectedColor : null,
+        "size": selectedSize ? selectedSize : null
       }
     });
 

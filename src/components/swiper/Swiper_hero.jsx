@@ -14,7 +14,7 @@ import './Swiper_hero.scss'
 import { Autoplay, Pagination } from 'swiper/modules';
 import { FaArrowRight } from 'react-icons/fa6';
 
-export default function Swiper_hero() {
+export default function Swiper_hero({product}) {
   return (
     <>
       <Swiper
@@ -27,7 +27,7 @@ export default function Swiper_hero() {
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        className="mySwiper"
+        className={product ? "mySwiper" : "mySwiper noactive"}
       >
         <SwiperSlide className='swiper-slider'>
           <div className="bolim">

@@ -1,23 +1,42 @@
-.mySwiper{
+.mySwiper {
     width: 82%;
     display: flex;
     align-items: center;
     justify-content: end !important;
     margin-right: 0;
-    .swiper-slider{
-        border-radius: 10px;
-        overflow: hidden;
-        margin-top: 20px;
-    }
-    .swiper-pagination-bullet{
+    height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    .swiper-pagination-bullet {
         width: 10px !important;
         height: 10px !important;
         background-color: white;
         opacity: 0.6 !important;
     }
 
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
         background-color: white !important;
         opacity: 1 !important;
+    }
+}
+
+.mySwiper.noactive {
+    opacity: 0.8;
+    background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+    animation: cardanimation 2s infinite linear;
+    background-size: 800px 50px;
+    .swiper-slider{
+        display: none;
+    }
+}
+
+@keyframes cardanimation {
+    from {
+        background-position: -800px 0px;
+    }
+
+    to {
+        background-position: 800px 0px;
     }
 }

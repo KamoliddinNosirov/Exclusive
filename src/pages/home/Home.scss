@@ -123,8 +123,26 @@
             align-items: center;
             justify-content: start;
             gap: 10px;
-            color: #DB4444;
             margin-bottom: 30px;
+
+            span {
+                color: #DB4444;
+            }
+        }
+
+        .title.noactive {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            opacity: 0.8;
+            background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+            animation: cardanimation 2s infinite linear;
+            background-size: 800px 50px;
+
+            img,
+            span {
+                display: none;
+            }
         }
 
         .bolim {
@@ -133,8 +151,27 @@
             justify-content: start;
 
             h1 {
-                font-size: 35px;
-                font-weight: 500;
+                width: auto;
+                height: auto;
+
+                h1 {
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+            }
+
+            .h1noactive {
+                width: 200px;
+                height: 50px;
+                border-radius: 10px;
+                opacity: 0.8;
+                background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+                animation: cardanimation 2s infinite linear;
+                background-size: 800px 50px;
+
+                h1 {
+                    display: none;
+                }
             }
 
             .boxs {
@@ -143,9 +180,15 @@
                 justify-content: center;
                 gap: 15px;
                 margin-left: 60px;
+
                 .dotet {
                     font-size: 25px;
                     color: #DB4444;
+                }
+
+                .dotet.noactive{
+                    color: gray;
+                    animation: dotetanimation .5s linear infinite;
                 }
 
                 .box {
@@ -164,6 +207,28 @@
                         margin-top: -5px;
                         font-weight: bold;
                     }
+                }
+
+                .boxnoactive {
+                    width: 42px;
+                    height: 50px;
+                    border-radius: 10px;
+                    opacity: 0.8;
+                    background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+                    animation: cardanimation 2s infinite linear;
+                    background-size: 800px 50px;
+                    span, p{
+                        display: none;
+                    }
+                }
+                .boxnoactive:nth-child(3){
+                    width: 50px !important;
+                }
+                .boxnoactive:nth-child(5){
+                    width: 65px !important;
+                }
+                .boxnoactive:nth-child(7){
+                    width: 70px !important;
                 }
             }
 
@@ -189,6 +254,15 @@
                         box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.296);
                     }
                 }
+                .spannoactive{
+                    opacity: 0.8;
+                    background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
+                    animation: cardanimation 2s infinite linear;
+                    background-size: 800px 50px;
+                    .icon{
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -200,6 +274,7 @@
             margin-top: 20px;
             gap: 65px;
             row-gap: 30px;
+
             .bosk {
                 width: 250px;
                 border-radius: 5px;
@@ -207,7 +282,7 @@
                 transition: all .3s ease;
                 border-radius: 5px;
                 padding-bottom: 5px;
-                
+
                 &:hover {
                     transform: translateY(-12px);
                     box-shadow: 0px 10px 10px 1px rgba(128, 128, 128, 0.165);
@@ -354,7 +429,7 @@
 
             .bosk.noactive {
                 opacity: 0.8;
-                background: linear-gradient(to right, #9ed7ff6d, #ffffff, #9ed7ff71);
+                background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
                 animation: cardanimation 2s infinite linear;
                 background-size: 800px 50px;
                 height: 330px;
@@ -377,6 +452,19 @@
                 cursor: pointer;
             }
         }
+
+        .buttonnoactive {
+            display: none !important;
+        }
+    }
+}
+
+@keyframes dotetanimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
@@ -676,9 +764,10 @@
                     }
                 }
             }
+
             .bosk.noactive {
                 opacity: 0.8;
-                background: linear-gradient(to right, #9ed7ff6d, #ffffff, #9ed7ff71);
+                background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
                 animation: cardanimation 2s infinite linear;
                 background-size: 800px 50px;
                 height: 330px;
@@ -999,9 +1088,10 @@
                     }
                 }
             }
+
             .bosk.noactive {
                 opacity: 0.8;
-                background: linear-gradient(to right, #9ed7ff6d, #ffffff, #9ed7ff71);
+                background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
                 animation: cardanimation 2s infinite linear;
                 background-size: 800px 50px;
                 height: 330px;
