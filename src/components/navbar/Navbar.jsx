@@ -44,7 +44,7 @@ function Navbar({ likIsCount, cartDate, user, user_info, getUser, inCarts, likec
         </div>
         <div className="container">
           <div className="logo">
-            <NavLink to={"/"}><img src="../../../public/imgs/logo.png" alt="" /></NavLink>
+            <NavLink to={"/"}><img src="public/imgs/logo.png" alt="" /></NavLink>
           </div>
           <ul>
             <li><NavLink className={"navlink"} to={"/"}>Home</NavLink></li>
