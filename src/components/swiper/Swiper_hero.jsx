@@ -43,7 +43,7 @@ export default function Swiper_hero({product}) {
               </button>
             </div>
             <div className="img-hero">
-              <img src="/public/imgs/phone.png" alt="" />
+              <img src="/imgs/phone.png" alt="" />
             </div>
           </div>
         </SwiperSlide>
@@ -61,7 +61,7 @@ export default function Swiper_hero({product}) {
               </button>
             </div>
             <div className="img-hero">
-              <img src="/public/imgs/hero-15iphone.jpg" alt="" />
+              <img src="/imgs/hero-15iphone.jpg" alt="" />
             </div>
           </div>
         </SwiperSlide>
@@ -79,7 +79,7 @@ export default function Swiper_hero({product}) {
               </button>
             </div>
             <div className="img-hero">
-              <img src="/public/imgs/16.webp" alt="" />
+              <img src="/imgs/16.webp" alt="" />
             </div>
           </div>
         </SwiperSlide>
