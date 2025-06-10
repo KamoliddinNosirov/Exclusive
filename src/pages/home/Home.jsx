@@ -223,7 +223,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
                   <button>Buy Now!</button>
                 </div>
                 <div className="img-box">
-                  <img src="/public/imgs/Frame 694.png" alt="" />
+                  <img src="/imgs/Frame 694.png" alt="" />
                 </div>
               </div>
             </section>

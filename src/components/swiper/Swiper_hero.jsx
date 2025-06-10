@@ -33,7 +33,7 @@ export default function Swiper_hero({product}) {
           <div className="bolim">
             <div className="info">
               <div className="phone">
-                <img src="/public/imgs/Appl.svg" alt="" />
+                <img src="/imgs/Appl.svg" alt="" />
                 <p>iPhone 14 Series</p>
               </div>
               <h1>Up to 5% off Voucher</h1>
@@ -51,7 +51,7 @@ export default function Swiper_hero({product}) {
           <div className="bolim">
             <div className="info">
               <div className="phone">
-                <img src="/public/imgs/Appl.svg" alt="" />
+                <img src="/imgs/Appl.svg" alt="" />
                 <p>iPhone 15 Series</p>
               </div>
               <h1>Up to 10% off Voucher</h1>
@@ -69,7 +69,7 @@ export default function Swiper_hero({product}) {
           <div className="bolim">
             <div className="info">
               <div className="phone">
-                <img src="/public/imgs/Appl.svg" alt="" />
+                <img src="/imgs/Appl.svg" alt="" />
                 <p>iPhone 16 Series</p>
               </div>
               <h1>Up to 15% off Voucher</h1>
