@@ -81,7 +81,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
       <main>
         <section className="flash" data-aos="fade-up" data-aos-duration="2000">
           <div className="container">
-            <p className={product ? 'title' : 'title noactive'}><img src="/public/imgs/sectionimg.png" alt="" /><span>Today’s</span></p>
+            <p className={product ? 'title' : 'title noactive'}><img src="/imgs/sectionimg.png" alt="" /><span>Today’s</span></p>
             <div className="bolim">
               <h1 className={product ? "" : "h1noactive"}><h1>Flash Sales</h1></h1>
               <div className="boxs">
@@ -135,7 +135,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
           <>
             <section className="browse" data-aos="fade-up" data-aos-duration="2000">
               <div className="container">
-                <p className='title'><img src="/public/imgs/sectionimg.png" alt="" />Categories</p>
+                <p className='title'><img src="/imgs/sectionimg.png" alt="" />Categories</p>
                 <div className="bolim">
                   <h1>Browse By Category</h1>
                   <div className="swipe">
@@ -173,7 +173,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
             </section>
             <section className="best" data-aos="fade-up" data-aos-duration="2000">
               <div className="container">
-                <p className='title'><img src="/public/imgs/sectionimg.png" alt="" />This Month</p>
+                <p className='title'><img src="/imgs/sectionimg.png" alt="" />This Month</p>
                 <div className="bolim">
                   <h1>Best Selling Products</h1>
                   <button onClick={() => {
@@ -229,7 +229,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
             </section>
             <section className="ourProduct" data-aos="fade-up" data-aos-duration="2000">
               <div className="container">
-                <p className='title'><img src="/public/imgs/sectionimg.png" alt="" />Our Products</p>
+                <p className='title'><img src="/imgs/sectionimg.png" alt="" />Our Products</p>
                 <div className="bolim">
                   <h1>Explore Our Products</h1>
                   <div className="swipe">
@@ -259,7 +259,7 @@ function Home({ getSelectedInfo, product, getDate, isLike, likIsCount }) {
             </section>
             <section className="newArrival" data-aos="fade-up" data-aos-duration="2000">
               <div className="container">
-                <p className='title'><img src="/public/imgs/sectionimg.png" alt="" />Today’s</p>
+                <p className='title'><img src="/imgs/sectionimg.png" alt="" />Today’s</p>
                 <h1>New Arrival</h1>
                 <div className="block">
                   <div className="bosk">
