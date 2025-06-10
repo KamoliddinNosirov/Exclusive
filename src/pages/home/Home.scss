@@ -188,7 +188,7 @@
 
                 .dotet.noactive{
                     color: gray;
-                    animation: dotetanimation .5s linear infinite;
+                    animation: dotetanimation 1s linear infinite;
                 }
 
                 .box {
@@ -259,6 +259,10 @@
                     background: linear-gradient(to right, #d9dbdc, #f1f0f0, #d9dbdc);
                     animation: cardanimation 2s infinite linear;
                     background-size: 800px 50px;
+                    &:hover{
+                        box-shadow: none;
+                        cursor: default;
+                    }
                     .icon{
                         display: none;
                     }
@@ -433,6 +437,10 @@
                 animation: cardanimation 2s infinite linear;
                 background-size: 800px 50px;
                 height: 330px;
+                &:hover{
+                    transform: none;
+                    box-shadow: none;
+                }
             }
         }
 
